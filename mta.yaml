@@ -1,0 +1,15 @@
+ID: solucao85
+_schema-version: '2.1'
+description: Solu����o 85
+version: 0.0.2
+modules:
+  - name: db
+    type: hdb
+    path: db
+    requires:
+      - name: hdi_db
+resources:
+  - name: hdi_db
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container
